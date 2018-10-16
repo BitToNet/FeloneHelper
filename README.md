@@ -1,9 +1,6 @@
 # FeloneHelper
 工作中总结的工具
 ###1.自定义对话框（CustomDialog）
-<p align='center'>
-<img src='images/customdialog.png' title='images' style='max-width:600px'></img>
-</p>
 	复制util中CustomDialog代码，
 	创建布局文件
 	将布局通过打气筒装到对话框
@@ -31,6 +28,10 @@
                                            })
                                            .build();
         customDialog.show();
+	
+<p align='center'>
+<img src='images/customdialog.png' title='images' style='max-width:600px'></img>
+</p>
 
 
 
