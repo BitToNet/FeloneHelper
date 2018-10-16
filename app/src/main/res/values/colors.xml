@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#277EFF</color>
+    <color name="colorPrimaryDark">#2B6FFF</color>
+    <color name="colorAccent">#5796EC</color>
+
+    <color name="yellow_color">#FFA200</color>
+
+    <color name="text_color_red">#FF0000</color>
+
+    <color name="text_color_deep">#3C3C3C</color>
+    <color name="text_color">#7B7F84</color>
+    <color name="text_color_light">#C6C5C5</color>
+    <color name="text_color_4">#444444</color>
+    <color name="text_color_6d">#6D6D6D</color>
+    <color name="text_color_b2">#B2B2B2</color>
+    <color name="text_color_89">#898989</color>
+    <color name="text_color_a0">#A0A0A0</color>
+    <color name="text_color_52">#525252</color>
+    <color name="text_color_6">#666666</color>
+    <color name="text_color_9">#999999</color>
+    <color name="text_color_7">#777777</color>
+    <color name="text_color_b8">#B8B8B8</color>
+    <color name="text_color_9b">#9b9b9b</color>
+    <color name="text_color_ad">#ADADAD</color>
+    <color name="text_color_orange">#ED7338</color>
+    <color name="text_color_green">#4FBD6B</color>
+    <color name="text_color_blue">#6CA4F1</color>
+    <color name="text_color_yellow">#FFC515</color>
+
+    <color name="divider_line">#DFDFDF</color>
+
+    <color name="oval_green_stoke">#C2E3CB</color>
+    <color name="oval_green">#4FBD6B</color>
+
+    <color name="oval_orange">#ED7338</color>
+
+    <color name="rect1">#B8A086</color>
+    <color name="rect2">#DCD0C3</color>
+
+    <color name="chart_text">#6DA5F1</color>
+    <color name="chart_line">#8B8B8B</color>
+    <color name="chart_line_text">#8B8B8B</color>
+
+    <color name="scan_corner_color">#0effc2</color>
+
+    <color name="bg_test_select">#4A000000</color>
+    <color name="bg_test_nor">#2B000000</color>
+
+    <color name="bar_deep">#bab8dd</color>
+    <color name="bar_soft">#a5dd6a</color>
+    <color name="bar_first">#6addb2</color>
+    <color name="bar_weak">#ebbe48</color>
+    <color name="bar_outbed">#dd7d6a</color>
+
+    <color name="tag_bg">#6095e0</color>
+
+    <color name="page1_start_color">#EE602C</color>
+    <color name="page1_end_color">#F2AB65</color>
+    <color name="page2_start_color">#336BB3</color>
+    <color name="page2_end_color">#61ABC0</color>
+    <color name="page3_start_color">#75539F</color>
+    <color name="page3_end_color">#A87CB7</color>
+    <color name="page4_start_color">#a5dd6a</color>
+    <color name="page4_end_color">#FF62CC74</color>
+    <color name="page5_start_color">#277EFF</color>
+    <color name="page5_end_color">#6DA5F1</color>
+
+    <color name="progress_color">#E8C01E</color>
+
+    <color name="color_d8">#D8D8D8</color>
+    <color name="color_f8">#F8F8F8</color>
+
+    <color name="search_bg_color">#F6F6F6</color>
+    <color name="search_bg_press_color">#7B7F84</color>
+
+    <color name="tag_bg_color">#F5F7F9</color>
+    <color name="tag_bg_press_color">#7B7F84</color>
+    <color name="tag_text_color">#2E3338</color>
+
+    <color name="press_white">#80ffffff</color>
+
+    <color name="bg_color_orange">#FF6200</color>
+    <color name="bg_color_light_orange">#FF8200</color>
+    <color name="bg_color_dark_orange">#FF4400</color>
+
+    <!--血压仪指示器部分-->
+    <color name="normal_gray">#7B7F84</color>
+    <color name="normal_green">#FF62CC74</color>
+    <color name="normal_red">#FFF96650</color>
+    <color name="normal_blue">#0400ff</color>
+    <color name="normal_yellow">#FFFFCC00</color>
+    <color name="circle_background">@color/white</color>
+    <color name="circle_title">@color/normal_gray</color>
+    <color name="circle_alert">@color/normal_gray</color>
+    <color name="circle_content">@color/normal_green</color>
+    <color name="circle_unit">@color/normal_green</color>
+    <color name="circle_gray">@color/normal_gray</color>
+    <color name="circle_green">@color/normal_green</color>
+    <color name="circle_yellow">@color/normal_yellow</color>
+    <color name="circle_red">@color/normal_red</color>
+    <color name="circle_blue">@color/normal_blue</color>
+    <color name="circle_white">@color/white</color>
+    <color name="indicator_center">#FFD8D5D5</color>
+    <color name="indicator_light">#FFEFEFEF</color>
+    <color name="indicator_gray">@color/normal_gray</color>
+    <color name="line_progress_background">@color/normal_gray</color>
+    <color name="line_progress_color">@color/normal_green</color>
+    <color name="line_indicator_background">@color/normal_green</color>
+
+    <color name="weight_color_1">#69A2F4</color>
+    <color name="weight_color_2">#62CC74</color>
+    <color name="weight_color_3">#FFE000</color>
+    <color name="weight_color_4">#FF6200</color>
+    <color name="weight_color_5">#FF0000</color>
+
+    <color name="text_color_pay_orange">#FF6600</color>
+    <color name="text_color_dialog_cancel_orange">#FF8900</color>
+    <color name="text_color_pay_bg">#F4F4F4</color>
+    <color name="text_color_pay_white">#FDFDFE</color>
+    <color name="text_color_pay_text_title">#4A4A4A</color>
+    <color name="text_color_pay_line">#E5E5E5</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="half_transparent">#4f000000</color>
+    <color name="quick_phone_gray_text">#ADADAD</color>
+    <color name="quick_phone_dark_text">#2E3338</color>
+    <color name="quick_phone_text_bg">#F5F7F9</color>
+
+    <color name="title_color">#444444</color>
+
+    <color name="window_background">#F4F4F4</color>
+
+    <color name="divider">#F5F5F5</color>
+
+    <color name="arc1">#738cea</color>
+    <color name="arc2">#74c7e8</color>
+    <color name="arc3">#48e0a2</color>
+    <color name="arc4">#ffc35a</color>
+    <color name="arc5">#ff7d4a</color>
+
+</resources>
