@@ -1,7 +1,7 @@
 # FeloneHelper
 工作中总结的工具
 ### 1.自定义对话框（CustomDialog）
-	复制util中CustomDialog代码，
+	复制util/CustomDialog代码，代码中有例子
 	创建布局文件
 	将布局通过打气筒装到对话框
 		View customView = LayoutInflater.from(this).inflate(R.layout.dialog_pay, null);
