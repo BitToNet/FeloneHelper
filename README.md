@@ -27,10 +27,8 @@
                                                }
                                            })
                                            .build();
-        customDialog.show();
-	
-![github](http://example.com/unicorn.png “github”)；
-
+        customDialog.show();	
+![github](https://github.com/BitToNet/FeloneHelper/raw/master/img/customdialog.png)
 
 ### 2.圆角textview（RoundTextView）、RoundLinearLayout等
 	这个的使用需要在清单文件中application下加配置
