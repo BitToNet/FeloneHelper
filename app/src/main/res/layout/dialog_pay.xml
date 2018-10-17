@@ -28,13 +28,14 @@
             android:text="确认要离开收银台？" />
 
         <TextView
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
             android:id="@+id/tv_message"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:textColor="@color/text_color_9b"
-            android:text="超过支付时效后订单将被取消，请尽
-        快完成支付" />
+            android:text="超过支付时效后订单将被取消，请尽快完成支付" />
 
         <LinearLayout
             android:layout_marginTop="10dp"
