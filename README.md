@@ -1,6 +1,6 @@
 # FeloneHelper
 工作中总结的工具
-###1.自定义对话框（CustomDialog）
+### 1.自定义对话框（CustomDialog）
 	复制util中CustomDialog代码，
 	创建布局文件
 	将布局通过打气筒装到对话框
@@ -29,13 +29,10 @@
                                            .build();
         customDialog.show();
 	
-<p align='center'>
-<img src='images/customdialog.png' title='images' style='max-width:600px'></img>
-</p>
+![github](http://example.com/unicorn.png “github”)；
 
 
-
-###2.圆角textview（RoundTextView）、RoundLinearLayout等
+### 2.圆角textview（RoundTextView）、RoundLinearLayout等
 	这个的使用需要在清单文件中application下加配置
 	        <!-- 全面屏 -->
         <meta-data
