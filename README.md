@@ -31,8 +31,8 @@
 ![github](https://github.com/BitToNet/FeloneHelper/raw/master/img/customdialog.png)
 
 ### 2.圆角textview（RoundTextView）、RoundLinearLayout等
-上面的对话框就套的一个RoundLinearLayout
-注意：这个的使用需要在清单文件中application下加配置
+	上面的对话框就套的一个RoundLinearLayout
+	注意：这个的使用需要在清单文件中application下加配置
 	        <!-- 全面屏 -->
         <meta-data
             android:name="android.max_aspect"
