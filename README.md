@@ -34,8 +34,8 @@
 	上面的对话框就套的一个RoundLinearLayout，把代码复制进去就Ok了，注意把资源文件也拷过去（res/anim、res/anim等）
 	
 	这个里面用到了
-    		// 屏幕适配
-    		api 'com.zhy:autolayout:1.4.5'
+    	// 屏幕适配
+    	api 'com.zhy:autolayout:1.4.5'
 	注意：这个的使用需要在清单文件中application下加配置
 	        <!-- 全面屏 -->
         <meta-data
