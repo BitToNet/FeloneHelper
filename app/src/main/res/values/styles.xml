@@ -26,4 +26,10 @@
         <item name="android:windowExitAnimation">@anim/modal_out</item>
     </style>
 
+    <!-- 进出动画 -->
+    <style name="BottomDialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/anim_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/anim_bottom_out</item>
+    </style>
+
 </resources>

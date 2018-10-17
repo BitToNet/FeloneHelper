@@ -6,6 +6,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import cn.bittonet.wftpay.felonehelper.utils.CustomDialog;
+import cn.bittonet.wftpay.felonehelper.utils.PickerUtils;
+import cn.qqtheme.framework.picker.OptionPicker;
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     CustomDialog customDialog;
@@ -14,6 +17,23 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //选择器演示
+        findViewById(R.id.button10).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ArrayList<String> kindList = new ArrayList<>();
+                for (int i = 0; i < 5; i++) {
+                    kindList.add(i+"");
+                }
+                PickerUtils.showPicker(MainActivity.this, "请选择", kindList,
+                                       new OptionPicker.OnOptionPickListener() {
+                                           @Override
+                                           public void onOptionPicked(int index, String item) {
+
+                                           }
+                                       });
+            }
+        });
     }
 
     @Override

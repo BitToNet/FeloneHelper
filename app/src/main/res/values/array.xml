@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="arr_tablayout">
+        <item>日记录</item>
+        <item>周记录</item>
+        <item>月记录</item>
+    </string-array>
+
+    <string-array name="equip_titles">
+        <item>睡眠</item>
+        <item>血压</item>
+        <item>血糖</item>
+        <item>体脂</item>
+        <item>心率</item>
+        <item>体温</item>
+        <item>血氧</item>
+        <!--<item>手环</item>-->
+        <!--<item>智能药盒</item>-->
+        <!--<item>呼吸</item>-->
+    </string-array>
+
+    <string-array name="equip_names">
+        <item>睡眠监测仪</item>
+        <item>电子血压计</item>
+        <item>血糖仪</item>
+        <item>体脂秤/体重秤</item>
+        <item>心率监测仪</item>
+        <item>电子体温计</item>
+        <item>脉搏血氧仪</item>
+        <item>手环</item>
+        <item>智能药盒</item>
+        <item>心肺检测仪</item>
+    </string-array>
+
+    <array name="array_temp_category">
+        <item>正常保健测量</item>
+        <item>身体不适时测量</item>
+        <item>治疗前测量</item>
+        <item>治疗后测量</item>
+        <item>服药前测量</item>
+        <item>服药后测量</item>
+        <item>其他</item>
+    </array>
+
+    <array name="array_bs_category">
+        <item>空腹(6~7点)血糖</item>
+        <item>餐前(午餐和晚餐前)血糖</item>
+        <item>餐后(早餐和午餐后)血糖</item>
+        <item>餐后(早餐和午餐)2小时血糖</item>
+        <item>睡前(21~22时)血糖</item>
+        <item>夜间(凌晨2~3点)血糖</item>
+        <item>其他时段血糖</item>
+    </array>
+
+    <string-array name="zhaohu_titles">
+        <item>全部</item>
+        <item>未付款</item>
+        <item>已付款</item>
+        <item>已完成</item>
+    </string-array>
+
+    <string-array name="leaderboard">
+        <item>今日排行</item>
+        <item>周排行</item>
+        <item>月排行</item>
+        <item>总排行</item>
+    </string-array>
+
+    <!-- 过敏史 -->
+    <array name="disease_allergies">
+        <item>青霉素</item>
+        <item>磺胺类</item>
+        <item>链霉素</item>
+        <item>头孢类</item>
+        <item>鸡蛋</item>
+        <item>牛奶</item>
+        <item>海鲜</item>
+        <item>花粉或尘螨</item>
+        <item>粉尘</item>
+        <item>洗洁剂</item>
+        <item>化妆品</item>
+    </array>
+
+    <!-- 手术史 -->
+    <array name="disease_surgery">
+        <item>头颅(含脑)</item>
+        <item>眼</item>
+        <item>耳鼻咽喉</item>
+        <item>额面部及口腔</item>
+        <item>颈部和甲状腺</item>
+        <item>胸部(含肺部)</item>
+        <item>心脏</item>
+        <item>外周血管</item>
+        <item>胃肠</item>
+        <item>肝胆</item>
+        <item>肾脏</item>
+        <item>脊柱</item>
+        <item>四肢及关节</item>
+        <item>膀胱</item>
+        <item>妇科</item>
+        <item>乳腺</item>
+        <item>前列腺</item>
+    </array>
+
+    <!-- 用药史 -->
+    <array name="disease_medication">
+        <item>降压药</item>
+        <item>降糖药</item>
+        <item>调脂药(降脂药)</item>
+        <item>降尿酸药</item>
+        <item>抗心律失常药</item>
+        <item>缓解哮喘药物</item>
+        <item>解热镇痛药</item>
+        <item>强的松类药物</item>
+        <item>雌激素类药物</item>
+        <item>利尿剂</item>
+        <item>镇静剂及安眠药</item>
+        <item>中草药</item>
+        <item>避孕药</item>
+        <item>抗抑郁药物</item>
+    </array>
+
+    <!-- 家族史疾病 -->
+    <array name="disease_family">
+        <item>高血压病</item>
+        <item>脑卒中</item>
+        <item>冠心病</item>
+        <item>外周血管病</item>
+        <item>心力衰竭</item>
+        <item>糖尿病</item>
+        <item>肥胖症</item>
+        <item>慢性肾脏疾病</item>
+        <item>慢性阻塞性肺病</item>
+        <item>骨质疏松</item>
+        <item>痛风</item>
+        <item>恶性肿瘤</item>
+        <item>风湿免疫性疾病</item>
+        <item>精神疾病</item>
+    </array>
+
+    <!-- 疾病史 -->
+    <array name="disease_">
+        <item>高血压病</item>
+        <item>脑卒中</item>
+        <item>冠心病</item>
+        <item>糖尿病</item>
+        <item>脂肪肝</item>
+        <item>慢性阻塞性肺病</item>
+        <item>哮喘</item>
+        <item>骨质疏松</item>
+        <item>血脂异常</item>
+        <item>恶性肿瘤</item>
+        <item>尿酸升高</item>
+    </array>
+
+    <!-- 恶性肿瘤 -->
+    <array name="disease_tumor">
+        <item>肺癌</item>
+        <item>肝癌</item>
+        <item>胃癌</item>
+        <item>食管癌</item>
+        <item>结直肠癌</item>
+        <item>白血病</item>
+        <item>脑瘤</item>
+        <item>乳腺癌</item>
+        <item>胰腺癌</item>
+        <item>骨癌</item>
+        <item>膀胱癌</item>
+        <item>鼻咽癌</item>
+        <item>宫颈癌</item>
+        <item>子宫癌</item>
+        <item>前列腺癌</item>
+        <item>暖巢癌</item>
+        <item>甲状腺癌</item>
+        <item>皮肤癌</item>
+    </array>
+
+    <!-- 平均每周被动吸烟天数 -->
+    <array name="smoking_days">
+        <item>没有</item>
+        <item>1~2天</item>
+        <item>3~4天</item>
+        <item>5~6天</item>
+        <item>7天</item>
+    </array>
+
+    <!-- 平均每天吸烟数 -->
+    <array name="smoking_number">
+        <item>少于5支</item>
+        <item>5~15支</item>
+        <item>15~25支</item>
+        <item>25~45支</item>
+        <item>大于45支</item>
+    </array>
+
+    <!-- 平均每天吸烟数 -->
+    <array name="drinking_number">
+        <item>少于2杯</item>
+        <item>2~4杯</item>
+        <item>大于4杯</item>
+    </array>
+
+    <!-- 药品单位 -->
+    <array name="drugs_unit">
+        <item>片</item>
+        <item>粒</item>
+        <item>丸</item>
+        <item>袋</item>
+        <item>克</item>
+        <item>毫克</item>
+        <item>毫升</item>
+        <item>贴</item>
+        <item>滴</item>
+        <item>瓶</item>
+        <item>包</item>
+        <item>个</item>
+        <item>杯</item>
+        <item>匙</item>
+        <item>支</item>
+        <item>喷雾</item>
+        <item>其他</item>
+    </array>
+
+    <!-- 用药方式 -->
+    <array name="drugs_way">
+        <item>口服</item>
+        <item>注射</item>
+        <item>皮下</item>
+        <item>舌苔</item>
+        <item>舌下</item>
+        <item>其他</item>
+    </array>
+
+    <!-- 慢性病 -->
+    <array name="chronic_diseases">
+        <item>无</item>
+        <item>高血压</item>
+        <item>高血脂</item>
+        <item>糖尿病</item>
+        <item>高血压、糖尿病</item>
+        <item>糖尿病、高血脂</item>
+        <item>高血压、高血脂</item>
+        <item>高血压、糖尿病、高血脂</item>
+    </array>
+
+    <!-- 医生列表排序方式 -->
+    <array name="sort_type_value">
+        <item>综合</item>
+        <item>三甲医院</item>
+        <item>评分</item>
+        <item>诊断量</item>
+    </array>
+
+    <!-- 医生列表排序方式 -->
+    <array name="sort_type">
+        <item>综合排序</item>
+        <item>三甲医院优先</item>
+        <item>评分由高到低</item>
+        <item>诊断量由多到少</item>
+    </array>
+
+    <string-array name="weekdays">
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+        <item>周日</item>
+    </string-array>
+
+    <string-array name="weekdays_cn">
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+        <item>星期日</item>
+    </string-array>
+
+    <string-array name="weekdays_en">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+
+    <string-array name="weekdays_en_abb">
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+        <item>Sun</item>
+    </string-array>
+
+    <string-array name="weekdays_en_let">
+        <item>M</item>
+        <item>T</item>
+        <item>W</item>
+        <item>T</item>
+        <item>F</item>
+        <item>S</item>
+        <item>S</item>
+    </string-array>
+</resources>

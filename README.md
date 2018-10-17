@@ -1,9 +1,9 @@
 # FeloneHelper
 工作中总结的工具
-### 1.自定义对话框（CustomDialog）
-	复制util/CustomDialog代码，代码中有例子
-	创建布局文件
-	将布局通过打气筒装到对话框
+## 1.自定义对话框（CustomDialog）
+###### 复制util/CustomDialog代码，代码中有例子
+###### 创建布局文件
+###### 将布局通过打气筒装到对话框
 		View customView = LayoutInflater.from(this).inflate(R.layout.dialog_pay, null);
         CustomDialog.Builder builder = new CustomDialog.Builder(this);
         customDialog = builder.cancelTouchout(true)
@@ -30,13 +30,13 @@
         customDialog.show();	
 ![github](https://github.com/BitToNet/FeloneHelper/raw/master/img/customdialog.png)
 
-### 2.圆角textview（RoundTextView）、RoundLinearLayout等
-	上面的对话框就套的一个RoundLinearLayout，把代码复制进去就Ok了，注意把资源文件也拷过去（res/anim、res/anim等）
+## 2.圆角textview（RoundTextView）、RoundLinearLayout等
+上面的对话框就套的一个RoundLinearLayout，把代码复制进去就Ok了，注意把资源文件也拷过去（res/anim、res/anim等）
 	
-	这个里面用到了
-    	// 屏幕适配
-    	api 'com.zhy:autolayout:1.4.5'
-	注意：这个的使用需要在清单文件中application下加配置
+###### 这个里面用到了
+	// 屏幕适配
+	api 'com.zhy:autolayout:1.4.5'
+###### 注意：这个的使用需要在清单文件中application下加配置
 	        <!-- 全面屏 -->
         <meta-data
             android:name="android.max_aspect"
@@ -48,3 +48,26 @@
             android:name="design_height"
             android:value="1334" />
 	
+## 3.仿京东选择器（日期选择，一级选择，二级选择，三级选择）
+用github上面的项目整合了一个工具类，照着下面的步骤一步一步去项目中拷，哪报错补哪
+###### Add it in your root build.gradle at the end of repositories:
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+###### Add the dependency
+	dependencies {
+    	implementation 'com.github.shichunlei:JDAddressSelector:0.0.3'
+		// AndroidPicker
+    	implementation('cn.qqtheme.framework:WheelPicker:1.5.6') {
+        exclude group: 'com.android.support'
+    	}
+	}
+###### 拷贝工具类
+	utils/StringUtils、PickerUtils、TimeUtils
+	widegt/FloatPicker
+
+###### 拷贝资源
+	values/styles、array
