@@ -1,12 +1,12 @@
 # FeloneHelper
 下面都是工作中总结的工具，全部集合在utils里面，一般都在代码中做了使用示例，直接把代码跑一遍，然后按下面的流程复制到自己项目就可以用。项目用的是AndroidStudio 3.1.3 ，高于这个版本的应该都可以正常跑起来。有目录，也可以用Ctrl+f搜索想要的内容。
 # 目录：
-[1.自定义对话框(CustomDialog)](#自定义对话框)
-- [图表(Chart)](#图表(Chart)) 
-- [抽屉菜单55](#抽屉菜单) 
+ [1.自定义对话框(CustomDialog)](#自定义对话框)
+ [2.圆角TextView（RoundTextView）、RoundLinearLayout等](#各种圆角控件)
+ [3.仿京东选择器（日期选择，一级选择，二级选择，三级选择）](#仿京东选择器)
 
 ## 自定义对话框
-1.(CustomDialog) [由于github上README.md的语法问题，标题不能带英文和字符，不然目录无法跳转]
+1.(CustomDialog) [github上README.md标题不能带英文和字符，不然目录无法跳转]
 ###### 复制util/CustomDialog代码，代码中有例子
 ###### 创建布局文件
 ###### 将布局通过打气筒装到对话框
@@ -36,8 +36,8 @@
         customDialog.show();	
 ![github](https://github.com/BitToNet/FeloneHelper/raw/master/img/customdialog.png)
 
-## 2.圆角textview（RoundTextView）、RoundLinearLayout等
-
+## 2.各种圆角控件
+圆角textview（RoundTextView）、RoundLinearLayout等
 上面的对话框就套的一个RoundLinearLayout，把代码复制进去就Ok了，注意把资源文件也拷过去（res/anim、res/anim等）
 	
 ###### 这个里面用到了
@@ -55,8 +55,8 @@
             android:name="design_height"
             android:value="1334" />
 	
-## 3.仿京东选择器（日期选择，一级选择，二级选择，三级选择）
-
+## 仿京东选择器
+3.仿京东选择器（日期选择，一级选择，二级选择，三级选择）
 用github上面的项目整合了一个工具类，照着下面的步骤一步一步去项目中拷，哪报错补哪
 ###### Add it in your root build.gradle at the end of repositories:
 	allprojects {
@@ -79,9 +79,3 @@
 
 ###### 拷贝资源
 	values/styles、array
-
-
-
-## 抽屉菜单 
-
-## 图表(Chart) 
