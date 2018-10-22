@@ -8,7 +8,9 @@
 - [图表(Chart)](#图表(Chart)) 
 - [抽屉菜单](#抽屉菜单) 
 
-## 自定义对话框(CustomDialog)
+## 自定义对话框(CustomDialog) 
+
+## 图表(Chart) 
 
 ###### 复制util/CustomDialog代码，代码中有例子
 ###### 创建布局文件
