@@ -37,7 +37,7 @@
 ![github](https://github.com/BitToNet/FeloneHelper/raw/master/img/customdialog.png)
 
 ## 各种圆角控件
-2.圆角TextView（RoundTextView）、RoundLinearLayout等
+2.圆角TextView（RoundTextView）、RoundLinearLayout等   
 上面的对话框就套的一个RoundLinearLayout，把代码复制进去就Ok了，注意把资源文件也拷过去（res/anim、res/anim等）
 	
 ###### 这个里面用到了
@@ -56,7 +56,7 @@
             android:value="1334" />
 	
 ## 仿京东选择器
-3.仿京东选择器（日期选择，一级选择，二级选择，三级选择）
+3.仿京东选择器（日期选择，一级选择，二级选择，三级选择）   
 用github上面的项目整合了一个工具类，照着下面的步骤一步一步去项目中拷，哪报错补哪
 ###### Add it in your root build.gradle at the end of repositories:
 	allprojects {
