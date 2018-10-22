@@ -4,7 +4,7 @@
 
 [1. 自定义对话框（CustomDialog）](##1.自定义对话框（CustomDialog）) 
 
-- [抽屉菜单](#抽屉菜单)
+- [1.自定义对话框（CustomDialog）](#1.自定义对话框（CustomDialog）)
 
 ## 1.自定义对话框（CustomDialog）
 ###### 复制util/CustomDialog代码，代码中有例子
