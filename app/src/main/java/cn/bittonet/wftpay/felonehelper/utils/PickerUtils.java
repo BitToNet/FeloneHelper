@@ -16,6 +16,10 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
+
+/**
+ * 仿京东选择器工具类（日期选择，一级选择，二级选择，三级选择）
+ */
 public class PickerUtils {
 
     private static final int TEXT_SIZE          = 18;

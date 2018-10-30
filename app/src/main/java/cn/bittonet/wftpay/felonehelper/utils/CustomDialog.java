@@ -10,9 +10,7 @@ import android.view.Window;
 import android.view.WindowManager;
 
 /**
- * Date：2017/9/21 0021-下午 1:35
- * Author: zxm
- * Description:
+ * 自定义对话框
  */
 public class CustomDialog extends Dialog {
 

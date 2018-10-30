@@ -1,10 +1,12 @@
-package cn.bittonet.wftpay.felonehelper;
+package cn.bittonet.wftpay.felonehelper.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import cn.bittonet.wftpay.felonehelper.R;
 import cn.bittonet.wftpay.felonehelper.utils.CustomDialog;
 import cn.bittonet.wftpay.felonehelper.utils.PickerUtils;
 import cn.qqtheme.framework.picker.OptionPicker;
@@ -32,6 +34,13 @@ public class MainActivity extends AppCompatActivity {
 
                                            }
                                        });
+            }
+        });
+        findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, AActivity.class);
+                startActivity(intent);
             }
         });
     }
