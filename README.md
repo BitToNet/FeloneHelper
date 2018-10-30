@@ -3,7 +3,7 @@
 # 目录：
 - [4.照片选择器（多张）](#照片选择器)
 - [3.仿京东选择器（日期选择，一级选择，二级选择，三级选择）](#仿京东选择器)
-- [2.圆角控件TextView、RoundTextView、RoundLinearLayout等](#各种圆角控件)
+- [2.圆角控件RoundTextView、RoundLinearLayout等](#各种圆角控件)
 - [1.自定义对话框(CustomDialog)](#自定义对话框)
 
 ## 照片选择器
@@ -72,7 +72,7 @@
 	values/styles、array
 
 ## 各种圆角控件
-2.圆角TextView（RoundTextView）、RoundLinearLayout等   
+2.圆角RoundTextView、RoundLinearLayout等   
 上面的对话框就套的一个RoundLinearLayout，把代码复制进去就Ok了，注意把资源文件也拷过去（res/anim、res/anim等）
 	
 ###### 这个里面用到了
