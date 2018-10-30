@@ -85,7 +85,7 @@
 
 
 ## 照片选择器
-4.照片选择器（多张）
+4.照片选择器（多张）  
 ![github](https://github.com/BitToNet/FeloneHelper/raw/master/img/photo1.png)
 ###### Add it in your root build.gradle at the end of repositories:
 	allprojects {
