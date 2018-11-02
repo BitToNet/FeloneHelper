@@ -50,19 +50,17 @@
 ###### YouAdapter定制适配器   
 		1.把k换为数据的bean类
 		2.加list布局R.layout.item
-		3.用helper给每个条目设置资源
+		3.用helper给每个条目的控件设置资源
 	
 	public class YouAdapter extends BaseQuickAdapter<K, BaseViewHolderHelper> {
-    	private List<K> mData;
 
     	public ChooseCityAdapter(@Nullable List<K> data) {
         	super(R.layout.item, data);
-        	mData = data;
     	}
 
     	@Override
     	protected void convert(BaseViewHolderHelper helper, K item) {
-        	helper.setText(R.id.tvName, item.getName());
+			helper.setText(R.id.tvName, item.getName());
 			helper.setImageUrl(R.id.iv_icon, item.getImageUrl(), R.drawable.);
     	}
 	}
