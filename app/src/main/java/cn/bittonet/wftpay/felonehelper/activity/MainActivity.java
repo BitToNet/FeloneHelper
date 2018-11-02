@@ -36,11 +36,19 @@ public class MainActivity extends AppCompatActivity {
                                        });
             }
         });
+        //照片选择器
         findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, AActivity.class);
                 startActivity(intent);
+            }
+        });
+        //通讯录
+        findViewById(R.id.button2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
             }
         });
     }
