@@ -1,15 +1,39 @@
 # FeloneHelper
-## 一切都是为了更好地复制粘贴   
+## 一切都是为了工作的便捷   
 下面都是工作中总结的工具，全部集合在utils里面，一般都在代码中做了使用示例，直接把代码跑一遍，然后按下面的流程复制到自己项目就可以用。项目用的是AndroidStudio 3.1.3 ，高于这个版本的应该都可以正常跑起来。有目录，也可以用Ctrl+f搜索想要的内容。   
 项目没有用butterknife、lambda，没有基类（因为他们的一些特性会导致不方便复制粘贴）
 # 目录：
 富文本
 通讯录（准备做）
+- [6.类似于手机通讯录的侧滑边栏](#通讯录)
 - [5.RecycleView帮助类](#多功能列表适配器)
 - [4.照片选择器（多张）](#照片选择器)
 - [3.仿京东选择器（日期选择，一级选择，二级选择，三级选择）](#仿京东选择器)
 - [2.圆角控件RoundTextView、RoundLinearLayout等](#各种圆角控件)
 - [1.自定义对话框(CustomDialog)](#自定义对话框)
+
+## 通讯录 
+6.类似于手机通讯录的侧滑边栏   
+![github](https://github.com/BitToNet/FeloneHelper/raw/master/img/Sidebar.gif)   
+其实这个项目分为三部分，三部分可以独立使用   
+1.  WaveSideBar（波浪侧边栏）   
+2.  ClearEditText（搜索栏）   
+3.  TitleItemDecoration（分类title）
+
+这个项目用到了- [5.RecycleView帮助类](#多功能列表适配器)
+###### 拷贝app/libs/pinyin4j-2.5.0.jar到相同目录，右键Add As Library...到项目目录
+
+###### 拷贝WaveSideBar库
+	拷贝WaveSideBar库到项目app同级目录下
+	方法一：File/Project Structure/Modules/Dependncies/右上角+号，选择WaveSideBar库，添加进去
+	方法二：添加依赖
+	implementation project(':wavesidebar')
+
+	前面的项目都是放到项目主体app下的，发现每次都要一个一个拷贝各种资源，如图片、array、styles、attrs等等，给别人用的时候特别麻烦，现在整合到一个库里面，拷一个库就可以啦，方便很多
+
+###### 拷贝工具
+	utils/Sidebar
+	activity/BActivity(示例)
 
 ## 多功能列表适配器
 5.RecycleView帮助类   
@@ -48,14 +72,13 @@
     mAdapter = new YouAdapter(mDateList);
     mRecyclerView.setAdapter(mAdapter);
 ###### YouAdapter定制适配器   
-		1.把k换为数据的bean类
-		2.加list布局R.layout.item
-		3.用helper给每个条目的控件设置资源
+	//1.把k换为数据的bean类
+	//2.加list布局R.layout.item
+	//3.用helper给每个条目的控件设置资源
 	
 	public class YouAdapter extends BaseQuickAdapter<K, BaseViewHolderHelper> {
-
-    	public ChooseCityAdapter(@Nullable List<K> data) {
-        	super(R.layout.item, data);
+    	public YouAdapter(@Nullable List<K> data) {
+			super(R.layout.item, data);
     	}
 
     	@Override

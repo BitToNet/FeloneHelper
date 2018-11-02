@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="cn.bittonet.wftpay.felonehelper">
+
     <!-- 读取扩展存储，从扩展卡读取数据 -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <!-- 写入扩展存储 -->
@@ -35,7 +36,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.AActivity" />
-        <activity android:name=".activity.PhotoViewActivity"></activity>
+        <activity android:name=".activity.PhotoViewActivity" />
+        <activity android:name=".activity.BActivity"></activity>
     </application>
 
 </manifest>
