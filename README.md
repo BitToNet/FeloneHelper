@@ -1,5 +1,5 @@
 # FeloneHelper
-##一切都是为了复制粘贴   
+## 一切都是为了更好地复制粘贴   
 下面都是工作中总结的工具，全部集合在utils里面，一般都在代码中做了使用示例，直接把代码跑一遍，然后按下面的流程复制到自己项目就可以用。项目用的是AndroidStudio 3.1.3 ，高于这个版本的应该都可以正常跑起来。有目录，也可以用Ctrl+f搜索想要的内容。   
 项目没有用butterknife、lambda，没有基类（因为他们的一些特性会导致不方便复制粘贴）
 # 目录：
@@ -47,10 +47,10 @@
     mRecyclerView.setLayoutManager(manager);
     mAdapter = new YouAdapter(mDateList);
     mRecyclerView.setAdapter(mAdapter);
-####### YouAdapter定制适配器   
-	1.把k换为数据的bean类
-	2.加list布局R.layout.item
-	3.用helper给每个条目设置资源
+###### YouAdapter定制适配器   
+		1.把k换为数据的bean类
+		2.加list布局R.layout.item
+		3.用helper给每个条目设置资源
 	
 	public class YouAdapter extends BaseQuickAdapter<K, BaseViewHolderHelper> {
     	private List<K> mData;
