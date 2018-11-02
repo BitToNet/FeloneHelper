@@ -5,7 +5,7 @@
 # 目录：
 富文本
 通讯录（准备做）
-- [5.RecycleView帮助类](#照片选择器)
+- [5.RecycleView帮助类](#多功能列表适配器)
 - [4.照片选择器（多张）](#照片选择器)
 - [3.仿京东选择器（日期选择，一级选择，二级选择，三级选择）](#仿京东选择器)
 - [2.圆角控件RoundTextView、RoundLinearLayout等](#各种圆角控件)
@@ -13,9 +13,9 @@
 
 ## 多功能列表适配器
 5.RecycleView帮助类   
-功能非常强大的帮助类 ，原作者地址[BRVAH](https://github.com/CymChad/BaseRecyclerViewAdapterHelper)
-这里对中国帮助类做了封装，加了很多功能，使得recycleview的使用变得非常方便灵活   
-这里所有项目中都设计到了recycleview的内容都是通过他实现的，比如照片选择器，通讯录
+功能非常强大的帮助类 ，原作者地址[BRVAH](https://github.com/CymChad/BaseRecyclerViewAdapterHelper)   
+这里对帮助类做了封装，加了很多功能，使得recycleview的使用变得非常方便灵活   
+所有项目中都设计到了recycleview的内容都是通过他实现的，比如照片选择器，通讯录
 ###### Add it in your root build.gradle at the end of repositories:
 	allprojects {
 		repositories {
@@ -47,7 +47,7 @@
     mRecyclerView.setLayoutManager(manager);
     mAdapter = new YouAdapter(mDateList);
     mRecyclerView.setAdapter(mAdapter);
-####### YouAdapter定制适配器
+####### YouAdapter定制适配器   
 	1.把k换为数据的bean类
 	2.加list布局R.layout.item
 	3.用helper给每个条目设置资源
