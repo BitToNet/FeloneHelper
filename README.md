@@ -14,7 +14,14 @@
 
 ## 通讯录 
 6.类似于手机通讯录的侧滑边栏   
-![github](https://github.com/BitToNet/FeloneHelper/raw/master/img/Sidebar.gif)   
+<p align="center">
+    <img src="https://github.com/BitToNet/FeloneHelper/raw/master/img/Sidebar.gif" alt="Sample"  width="270" height="480">
+    <p align="center">
+        <em>演示</em>
+    </p>
+</p>
+
+
 其实这个项目分为三部分，三部分可以独立使用   
 1.  WaveSideBar（波浪侧边栏）   
 2.  ClearEditText（搜索栏）   
