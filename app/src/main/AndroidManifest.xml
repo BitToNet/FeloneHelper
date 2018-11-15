@@ -37,7 +37,8 @@
         </activity>
         <activity android:name=".activity.AActivity" />
         <activity android:name=".activity.PhotoViewActivity" />
-        <activity android:name=".activity.BActivity"></activity>
+        <activity android:name=".activity.BActivity" />
+        <activity android:name=".activity.CActivity"></activity>
     </application>
 
 </manifest>

@@ -1,16 +1,61 @@
 # FeloneHelper
 ## 一切都是为了工作的便捷   
+项目地址：https://github.com/BitToNet/FeloneHelper   
 下面都是工作中总结的工具，全部集合在utils里面，一般都在代码中做了使用示例，直接把代码跑一遍，然后按下面的流程复制到自己项目就可以用。项目用的是AndroidStudio 3.1.3 ，高于这个版本的应该都可以正常跑起来。有目录，也可以用Ctrl+f搜索想要的内容。   
 项目没有用butterknife、lambda，没有基类（因为他们的一些特性会导致不方便复制粘贴）
 # 目录：
-富文本
-通讯录（准备做）
+富文本（准备做）
+- [7.可用于商品展示的锚点定位加联动布局](#可用于商品展示的锚点定位加联动布局)
 - [6.类似于手机通讯录的侧滑边栏](#通讯录)
 - [5.RecycleView帮助类](#多功能列表适配器)
 - [4.照片选择器（多张）](#照片选择器)
 - [3.仿京东选择器（日期选择，一级选择，二级选择，三级选择）](#仿京东选择器)
 - [2.圆角控件RoundTextView、RoundLinearLayout等](#各种圆角控件)
 - [1.自定义对话框(CustomDialog)](#自定义对话框)
+
+## 可用于商品展示的锚点定位加联动布局 
+7.锚点定位加联动布局   
+<p align="center">
+    <img src="https://github.com/BitToNet/FeloneHelper/raw/master/img/CustomScrollView.gif" alt="Sample"  width="270" height="480">
+    <p align="center">
+        <em>演示</em>
+    </p>
+</p>
+原始项目地址：https://github.com/taixiang/tabScroll
+这个是网上找的一个项目，修复了一些bug   
+1. 自定义的ScrollView会造成他子类里面包含的recycleview加载不全  
+2. 从底部滑到顶部后再次跳转回混乱   
+3. recycleview充当子类的时候占用父类的touch事件造成卡顿
+
+这个项目用到了- [5.RecycleView帮助类](#多功能列表适配器)
+###### 使用方法
+演示代码入口在CActivity里面，能看懂代码就不用看下面了
+###### 添加依赖
+	dependencies {
+		api "com.android.support:design:${SUPPORT_VERSION}"
+	}
+1.拷贝自定义widget/CustomScrollView  
+2.添加布局，在id为ll_top的LinearLayout里加头部 
+3.拷贝CActivity中四个方法，并在init中处理自己的数据
+4.仿写一个AnchorView，在布局R.layout.view_anchor自定义自己的子模块界面
+###### 特别注意：
+	如果子模块中加了recycleview，一定要加这么一条代码
+	recyclerView.setNestedScrollingEnabled(false);
+
+
+###### 拷贝WaveSideBar库
+	拷贝WaveSideBar库到项目app同级目录下
+	方法一：File/Project Structure/Modules/Dependncies/右上角+号，选择WaveSideBar库，添加进去
+	方法二：添加依赖
+	implementation project(':wavesidebar')
+
+	前面的项目都是放到项目主体app下的，发现每次都要一个一个拷贝
+	各种资源，如图片、array、styles、attrs等等，给别人用的时候
+	特别麻烦，现在整合到一个库里面，拷一个库就可以啦，方便很多
+
+###### 拷贝工具
+	utils/Sidebar
+	activity/BActivity(示例)
 
 ## 通讯录 
 6.类似于手机通讯录的侧滑边栏   
@@ -36,7 +81,9 @@
 	方法二：添加依赖
 	implementation project(':wavesidebar')
 
-	前面的项目都是放到项目主体app下的，发现每次都要一个一个拷贝各种资源，如图片、array、styles、attrs等等，给别人用的时候特别麻烦，现在整合到一个库里面，拷一个库就可以啦，方便很多
+	前面的项目都是放到项目主体app下的，发现每次都要一个一个拷贝
+	各种资源，如图片、array、styles、attrs等等，给别人用的时候
+	特别麻烦，现在整合到一个库里面，拷一个库就可以啦，方便很多
 
 ###### 拷贝工具
 	utils/Sidebar

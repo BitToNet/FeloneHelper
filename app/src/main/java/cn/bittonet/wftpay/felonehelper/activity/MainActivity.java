@@ -52,6 +52,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        //锚点定位加联动
+        //通讯录
+        findViewById(R.id.button3).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, CActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
