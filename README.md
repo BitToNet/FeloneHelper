@@ -21,8 +21,11 @@
         <em>演示</em>
     </p>
 </p>
-原始项目地址：https://github.com/taixiang/tabScroll
+
+原始项目地址：https://github.com/taixiang/tabScroll  
+
 这个是网上找的一个项目，修复了一些bug  
+
 1. 自定义的ScrollView会造成他子类里面包含的recycleview加载不全  
 2. 从底部滑到顶部后再次跳转回混乱  
 3. recycleview充当子类的时候占用父类的touch事件造成卡顿  
@@ -35,9 +38,9 @@
 		api "com.android.support:design:${SUPPORT_VERSION}"
 	}
 1.拷贝自定义widget/CustomScrollView  
-2.添加布局，在id为ll_top的LinearLayout里加头部 
-3.拷贝CActivity中四个方法，并在init中处理自己的数据
-4.仿写一个AnchorView，在布局R.layout.view_anchor自定义自己的子模块界面
+2.添加布局，在id为ll_top的LinearLayout里加头部  
+3.拷贝CActivity中四个方法，并在init中处理自己的数据  
+4.仿写一个AnchorView，在布局R.layout.view_anchor自定义自己的子模块界面  
 ###### 特别注意：
 	如果子模块中加了recycleview，一定要加这么一条代码
 	recyclerView.setNestedScrollingEnabled(false);
