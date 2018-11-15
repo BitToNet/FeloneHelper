@@ -22,10 +22,10 @@
     </p>
 </p>
 原始项目地址：https://github.com/taixiang/tabScroll
-这个是网上找的一个项目，修复了一些bug   
+这个是网上找的一个项目，修复了一些bug  
 1. 自定义的ScrollView会造成他子类里面包含的recycleview加载不全  
-2. 从底部滑到顶部后再次跳转回混乱   
-3. recycleview充当子类的时候占用父类的touch事件造成卡顿
+2. 从底部滑到顶部后再次跳转回混乱  
+3. recycleview充当子类的时候占用父类的touch事件造成卡顿  
 
 这个项目用到了- [5.RecycleView帮助类](#多功能列表适配器)
 ###### 使用方法
@@ -42,20 +42,6 @@
 	如果子模块中加了recycleview，一定要加这么一条代码
 	recyclerView.setNestedScrollingEnabled(false);
 
-
-###### 拷贝WaveSideBar库
-	拷贝WaveSideBar库到项目app同级目录下
-	方法一：File/Project Structure/Modules/Dependncies/右上角+号，选择WaveSideBar库，添加进去
-	方法二：添加依赖
-	implementation project(':wavesidebar')
-
-	前面的项目都是放到项目主体app下的，发现每次都要一个一个拷贝
-	各种资源，如图片、array、styles、attrs等等，给别人用的时候
-	特别麻烦，现在整合到一个库里面，拷一个库就可以啦，方便很多
-
-###### 拷贝工具
-	utils/Sidebar
-	activity/BActivity(示例)
 
 ## 通讯录 
 6.类似于手机通讯录的侧滑边栏   
