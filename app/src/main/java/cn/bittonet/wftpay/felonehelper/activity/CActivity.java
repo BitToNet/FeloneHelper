@@ -68,16 +68,16 @@ public class CActivity extends AppCompatActivity {
             @Override
             public void onGlobalLayout() {
                 //计算让最后一个view高度撑满屏幕
-                int        screenH    = getScreenHeight();
-                int        statusBarH = getStatusBarHeight(CActivity.this);
-                int        tabH       = holderTabLayout.getHeight();
-                int        lastH      = screenH - statusBarH - tabH - 16 * 3;
+                int        screenH    = getScreenHeight();//屏幕高的像素点，如1920
+                int        statusBarH = getStatusBarHeight(CActivity.this);//状态栏的高度，如78
+                int        tabH       = holderTabLayout.getHeight();//tab栏高度，150
+                int        lastH      = screenH - statusBarH - tabH - 16 * 3;//后面16是布局中的padding
                 AnchorView anchorView = anchorList.get(anchorList.size() - 1);
                 if (anchorView.getHeight() < lastH) {
                     LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
                             LinearLayout.LayoutParams.MATCH_PARENT,
                             LinearLayout.LayoutParams.WRAP_CONTENT);
-                    params.height = lastH;
+                    params.height = lastH;//重新设置布局的高度
                     anchorView.setLayoutParams(params);
                 }
 
