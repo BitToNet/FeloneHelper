@@ -5,7 +5,9 @@ csdn：https://blog.csdn.net/qq_36333289
 下面都是工作中总结的工具，全部集合在utils里面，一般都在代码中做了使用示例，直接把代码跑一遍，然后按下面的流程复制到自己项目就可以用。项目用的是AndroidStudio 3.1.3 ，高于这个版本的应该都可以正常跑起来。有目录，也可以用Ctrl+f搜索想要的内容。   
 项目没有用butterknife、lambda，没有基类（因为他们的一些特性会导致不方便复制粘贴）
 # 目录：
-富文本（准备做）
+富文本（准备做）  
+RecyclerView粘性标签库
+https://github.com/oubowu/PinnedSectionItemDecoration  
 - [7.可用于商品展示的锚点定位加联动布局](#可用于商品展示的锚点定位加联动布局)
 - [6.类似于手机通讯录的侧滑边栏](#通讯录)
 - [5.RecycleView帮助类](#多功能列表适配器)
