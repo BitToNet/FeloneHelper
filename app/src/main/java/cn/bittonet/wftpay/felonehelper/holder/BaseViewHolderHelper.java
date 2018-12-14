@@ -20,10 +20,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import cn.bittonet.wftpay.felonehelper.R;
 import cn.bittonet.wftpay.felonehelper.utils.DownloadImageTask;
 import cn.bittonet.wftpay.felonehelper.utils.ViewUtils;
+import cn.bittonet.wftpay.felonehelper.widget.MyJzvdStd;
 import cn.bittonet.wftpay.felonehelper.widget.RoundTextView;
 import cn.bittonet.wftpay.felonehelper.widget.SmoothCheckBox;
+import cn.jzvd.JZDataSource;
+import cn.jzvd.JzvdStd;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.Priority;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
@@ -33,6 +37,8 @@ import me.zhanghai.android.materialratingbar.MaterialRatingBar;
 
 
 public class BaseViewHolderHelper extends BaseViewHolder {
+
+    private MyJzvdStd myJzvdStd;
 
     public BaseViewHolderHelper(View view) {
         super(view);
@@ -93,6 +99,56 @@ public class BaseViewHolderHelper extends BaseViewHolder {
         ImageView imageview = getView(viewId);
         RequestOptions options = new RequestOptions().centerCrop()
                                                      .priority(Priority.HIGH)
+                                                     .diskCacheStrategy(DiskCacheStrategy.NONE);
+
+        Glide.with(imageview.getContext()).load(imageUrl).apply(options).into(imageview);
+        return this;
+    }
+
+    /**
+     * 加载网络视频
+     *
+     * @param viewId   控件ID
+     * @param imageUrl 图片URL
+     * @return
+     */
+    @SuppressLint("NewApi")
+    public BaseViewHolderHelper setMvUrl(@IdRes int viewId, String imageUrl) {
+        JZDataSource jzDataSource = new JZDataSource(imageUrl, imageUrl);
+        jzDataSource.looping = true;
+        if(myJzvdStd==null){
+            myJzvdStd = getView(viewId);
+            //播放器圆角设置
+            myJzvdStd.setOutlineProvider(new MyJzvdStd.JzViewOutlineProvider(new Float(15)));
+            myJzvdStd.setClipToOutline(true);
+            myJzvdStd
+                    //                .setUp("http://jzvd.nathen.cn/342a5f7ef6124a4a8faf00e738b8bee4/cf6d9db0bd4d41f59d09ea0a81e918fd-5287d2089db37e62345123a1be272f8b.mp4"
+                    //                .setUp("https://api.amemv.com/aweme/v1/play/?video_id=v0200f1b0000be6baucd1dr3qdhlo9f0&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"
+                    .setUp(jzDataSource, JzvdStd.SCREEN_WINDOW_NORMAL);
+            //            myJzvdStd.startVideo();
+
+        }else {
+            myJzvdStd.changeUrl(jzDataSource, 0);
+        }
+
+
+
+        //        myJzvdStd.setCallbacks();
+        return this;
+    }
+
+
+    /**
+     * 加载网络图片
+     *
+     * @param viewId   控件ID
+     * @param imageUrl 图片URL
+     * @return
+     */
+    public BaseViewHolderHelper setImageUrl2(@IdRes int viewId, String imageUrl) {
+        ImageView imageview = getView(viewId);
+        RequestOptions options = new RequestOptions().priority(Priority.HIGH)
+                                                     .placeholder(R.drawable.image_processing)
                                                      .diskCacheStrategy(DiskCacheStrategy.NONE);
 
         Glide.with(imageview.getContext()).load(imageUrl).apply(options).into(imageview);

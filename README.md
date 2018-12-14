@@ -8,6 +8,7 @@ csdn：https://blog.csdn.net/qq_36333289
 富文本（准备做）  
 RecyclerView粘性标签库
 https://github.com/oubowu/PinnedSectionItemDecoration  
+- [8.小红书加抖音](#小红书加抖音)
 - [7.可用于商品展示的锚点定位加联动布局](#可用于商品展示的锚点定位加联动布局)
 - [6.类似于手机通讯录的侧滑边栏](#通讯录)
 - [5.RecycleView帮助类](#多功能列表适配器)
@@ -15,6 +16,9 @@ https://github.com/oubowu/PinnedSectionItemDecoration
 - [3.仿京东选择器（日期选择，一级选择，二级选择，三级选择）](#仿京东选择器)
 - [2.圆角控件RoundTextView、RoundLinearLayout等](#各种圆角控件)
 - [1.自定义对话框(CustomDialog)](#自定义对话框)
+
+## 小红书加抖音 
+最近比较忙，细节没来得及写，不过看源码也看得懂，用了jiaozivideoplayer和PagerSnapHelper，控制是用回调实现的
 
 ## 可用于商品展示的锚点定位加联动布局 
 7.锚点定位加联动布局   
